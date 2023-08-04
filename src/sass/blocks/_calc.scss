@@ -1,0 +1,287 @@
+.calc {
+    
+    padding-bottom: 140px;
+    z-index: 2;
+    &__image {
+        position: absolute;
+        top: -505px;
+        left: 0;
+        opacity: .3;
+        // z-index: -1!important;
+    }
+    &__title-color {
+        margin-bottom: 60px;
+    }
+    &__inner {
+        position: relative;
+        z-index: 4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__checkbox {
+        display: none;
+
+        &:checked+.form-top__agree__ok {
+            background: url('../img/last-form/ok.png') no-repeat center;
+        }
+    }
+
+    &__agree {
+        display: block;
+        width: 100%;
+        max-width: 339px;
+        padding-left: 35px;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    &__agree__ok {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border: 1px solid #1D1E23;
+        position: absolute;
+        left: 0;
+        top: 5px;
+    }
+
+    &__agree__text {
+        font-size: 12px;
+        line-height: 105%;
+        color: #1D1E23;
+    }
+    &__box {
+        padding: 47px 67px;
+        width: 655px;
+        min-height: 435px;
+        border-radius: 35px;
+        background: #FFF;
+        box-shadow: 0px 3px 8px 0px rgba(66, 66, 66, 0.29);
+    }
+    &__box-title {
+        color: #1D1E23;
+        text-align: center;
+        font-family: 'Gilroy Black', sans-serif;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 900;
+        margin-bottom: 25px;
+    }
+    &__block {
+        position: relative;
+        width: 100%;
+        max-width: 520px;
+
+        &--one {
+            margin-bottom: 90px;
+        }
+
+        &__title {
+            font-size: 24px;
+            color: #1D1E23;
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            bottom: 23px;
+        }
+    }
+
+    &__field {
+        font-family: 'Gilroy Black', sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        color: #0B1F35;
+        padding: 0 21px 21px;
+        background: transparent;
+        border-radius: 12px 12px 0px 0px;
+        width: 100%;
+        border: none;
+        text-align: right;
+        position: relative;
+        z-index: 2;
+
+        &:focus {
+            outline: none;
+        }
+
+        &--2 {
+            padding-right: 57px;
+        }
+
+        &__text {
+            position: absolute;
+            right: 0;
+            bottom: 25px;
+            font-family: 'Gilroy Black', sans-serif;
+            font-weight: 900;
+            font-size: 24px;
+            color: #1D1E23;
+
+            &--year {
+                right: 0;
+                left: 100%;
+                transform: translateX(-39px);
+            }
+        }
+    }
+
+    &__range-box {
+        width: 100%;
+    }
+
+    &__range {
+        position: relative;
+        height: 4px;
+        background: rgba(29, 30, 35, 0.50);
+    }
+
+    &__range-min-val {
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+        font-size: 14px;
+        color: #1D1E23;
+    }
+
+    &__range__track {
+        position: absolute;
+        height: 100%;
+        background: #FFC700;
+        display: block;
+        z-index: 1;
+        width: 10%;
+
+        &:after {
+            width: 21px;
+            height: 21px;
+            position: absolute;
+            content: "";
+            right: 0px;
+            top: 0;
+            margin-top: -10px;
+            cursor: pointer;
+            z-index: 6;
+            border-radius: 50%;
+            background: #FFC700;
+            margin-right: -10px;
+        }
+
+        &--2 {
+            width: 70%;
+        }
+    }
+
+    &__range__input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        background: none;
+        opacity: 0;
+        cursor: pointer;
+        height: 40px;
+        left: 0px;
+        top: -20px;
+        line-height: 40px;
+
+        &::-webkit-slider-thumb {
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    &__range-max-val {
+        position: absolute;
+        right: 0;
+        bottom: -30px;
+        font-size: 16px;
+        color: #1D1E23;
+    }
+
+    &__form {
+        width: 925px;
+        min-height: 433px;
+        border-radius: 35px;
+        background: #FFF;
+        box-shadow: 0px 3px 8px 0px rgba(66, 66, 66, 0.29);
+        padding: 30px 51px 30px 70px;
+    }
+    &__form-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__form-left-title {
+        color: #1D1E23;
+        font-family: 'Gilroy Black', sans-serif;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+    &__form-result-box {
+        margin-bottom: 25px;
+        &:last-of-type {
+            margin-bottom: 55px;
+        }
+    }
+    &__form-result-text {
+        color: #1D1E23;
+        font-size: 24px;
+    }
+    &__form-result-title {
+        color: #FFC700;
+        font-family: 'Gilroy Black', sans-serif;
+        font-size: 35px;
+        font-weight: 900;
+    }
+    &__form-left-block {
+        text-align: right;
+    }
+    &__form-left-button {
+        border: none;
+        outline: none;
+        width: 346px;
+        height: 60px;
+        cursor: pointer;
+        color: #1D1E23;
+        font-family: 'Gilroy Black', sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        background-color: transparent;
+        border-radius: 30px;
+        border: 3px solid #FFC700;
+    }
+    &__form-right-button {
+        width: 360px;
+        height: 60px;
+    }
+    &__form-input-group {
+        width: 360px;
+        margin-bottom: 15px;
+    }
+    &__form-input {
+        width: 100%;
+        height: 60px;
+        border: none;
+        border-radius: 35px;
+        border: 1px solid rgba(29, 30, 35, 0.20);
+        background: rgba(238, 238, 238, 0.50);
+        font-size: 20px;
+        padding: 0 25px;
+        color: rgba(29, 30, 35, 0.50);
+    
+        &::placeholder {
+            color: rgba(29, 30, 35, 0.50);
+        }
+    
+        &:focus {
+            outline: none;
+        }
+    }
+}

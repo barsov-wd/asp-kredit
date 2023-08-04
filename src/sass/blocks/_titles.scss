@@ -1,0 +1,20 @@
+.title {
+    color: #1D1E23;
+    font-family: 'Raleway Black', sans-serif;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    font-variant-numeric: lining-nums proportional-nums;
+    &-color {
+        font-family: 'Raleway Black', sans-serif;
+        font-weight: 900;
+        font-size: 55px;
+        text-transform: uppercase;
+        background: linear-gradient(90deg, #FF0000 -1.69%, #F1C622 74.31%);
+        font-variant-numeric: lining-nums proportional-nums;
+        color: #F1C622;
+        display: table;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

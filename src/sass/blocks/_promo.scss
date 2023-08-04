@@ -1,0 +1,153 @@
+.promo {
+    position: relative;
+    padding-top: 99px;
+    padding-bottom: 56px;
+    // background: rgba(238, 238, 238, 0.60);
+    // backdrop-filter: blur(5.5px);
+    // -webkit-backdrop-filter: blur(5.5px);
+    overflow: hidden;
+    z-index: 1;
+    &__image {
+        width: 870px;
+    }
+    &__content {
+        max-width: 750px;
+        margin-bottom: 43px;
+    }
+    &__subtitle {
+        position: relative;
+        padding-left: 77px;
+        background: linear-gradient(116deg, #1D1E23 24.43%, #818181 43.24%, #1D1E23 61.28%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 55px;
+        font-family: 'Raleway Black', sans-serif;
+        font-weight: 900;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 65px;
+            height: 9px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffc700;
+        }
+    }
+    &__title {
+        font-family: 'Raleway Black', sans-serif;
+        font-size: 65px;
+        font-weight: 900;
+        line-height: 120%;
+        text-transform: uppercase;
+        background: linear-gradient(129deg, #1D1E23 12.65%, #8D8D8D 38.22%, #1D1E23 54.91%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 5px;
+    }
+    &__title-color {
+        background: linear-gradient(120deg, #FFC700 15.93%, #ECD719 38.03%, #FFC700 78.69%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 75px;
+        line-height: 110%;
+        font-family: 'Gilroy Black', sans-serif;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    &__subtext {
+        font-size: 55px;
+        line-height: 100%;
+        font-family: 'Raleway Black', sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        background: linear-gradient(129deg, #1D1E23 12.65%, #8D8D8D 38.22%, #1D1E23 54.91%);
+        font-variant-numeric: lining-nums proportional-nums;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        max-width: 335px;
+        margin-bottom: 10px;
+    }
+    &__subdescr {
+        font-size: 35px;
+        font-family: 'Raleway Black', sans-serif;
+        font-weight: 900;
+        background: linear-gradient(129deg, #1D1E23 12.65%, #8D8D8D 38.22%, #1D1E23 54.91%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 43px;
+    }
+    &__button {
+        width: 540px;
+        height: 60px;
+        font-size: 20px;
+        color: #fff;
+        font-family: 'Gilroy Black', sans-serif;
+        font-weight: 900;
+        border: none;
+        outline: none;
+        border-radius: 35px;
+        background: linear-gradient(90deg, #F00 0%, #F1C622 100%);
+        box-shadow: -2px 3px 3px 0px rgba(149, 120, 16, 0.25);
+        cursor: pointer;
+    }
+    &__items {
+        width: 925px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 50px;
+        row-gap: 35px;
+    }
+    &__item {
+        text-align: center;
+    }
+    &__item-text {
+        color: #1D1E23;
+        font-size: 24px;
+    }
+    &__image {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    &__image-money {
+        position: absolute;
+        bottom: -8px;
+        right: 0;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 82px;
+        right: 225px;
+        z-index: -3;
+        width: 780px;
+        height: 780px;
+        background: radial-gradient(55.24% 55.24% at 44.46% 44.76%, #FFA800 13.54%, rgba(217, 217, 217, 0) 100%);
+        border-radius: 780px;
+        opacity: .1;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: -50px;
+        right: -150px;
+        z-index: -3;
+        width: 916px;
+        height: 916px;
+        background: radial-gradient(52.57% 52.57% at 50% 50%, #AA0B0D 24.46%, rgba(217, 217, 217, 0) 90.43%);
+        border-radius: 916px;
+        opacity: .3;
+    }
+    &__image-middle {
+        display: none;
+    }
+}

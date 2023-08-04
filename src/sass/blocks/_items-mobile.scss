@@ -1,0 +1,21 @@
+.items-mobile {
+    padding-bottom: 120px;
+    display: none;
+    &__items {
+        width: 832px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 45px;
+        row-gap: 25px;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__item-text {
+        color: #1D1E23;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,86 @@
+.specialists {
+    position: relative;
+    background: rgba(238, 238, 238, 0.60);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    padding-bottom: 140px;
+    z-index: 1;
+    &__title {
+        margin-bottom: 60px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__block-item {
+        transform: translateY(-6px);
+        padding: 11px 50px;
+        width: 925px;
+        border-radius: 0px 0px 35px 35px;
+        background: #FFF;
+        box-shadow: 0px 2px 6px 0px rgba(66, 66, 66, 0.25);
+    }
+    &__block-name {
+        color: #1D1E23;
+        font-family: 'Gilroy Black', sans-serif;
+        font-size: 24px;
+        font-weight: 900;
+    }
+    &__block-post {
+        color: #AA0B0D;
+        font-size: 24px;
+    }
+    &__content {
+        width: 448px;
+        text-align: center;
+    }
+    &__content-title {
+        color: #AA0B0D;
+        font-family: 'Gilroy Black', sans-serif;
+        font-size: 35px;
+        font-weight: 900;
+        margin-bottom: 27px;
+    }
+    &__list {
+        margin-bottom: 30px;
+    }
+    &__list-item {
+        margin-bottom: 10px;
+        color: #1D1E23;
+        font-size: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__button {
+        border: none;
+        outline: none;
+        border-radius: 35px;
+        background: #FFC700;
+        width: 425px;
+        height: 60px;
+        color: #1D1E23;
+        font-family: 'Gilroy Black', sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+    &__content-text,
+    &__content-policy-link {
+        color: #1D1E23;
+        font-family: 'Gilroy Black', sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    &__content-policy-link {
+        display: block;
+        text-decoration: underline;
+        margin-bottom: 20px;
+    }
+    &__working-schedule {
+        color: #1D1E23;
+        font-size: 30px;
+    }
+}
