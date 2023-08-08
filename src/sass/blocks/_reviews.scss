@@ -1,9 +1,9 @@
 .reviews {
     position: relative;
-    background: rgba(238, 238, 238, 0.60);
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
     padding-bottom: 140px;
+    // background: rgba(238, 238, 238, 0.60);
+    // z-index: 4;
+    
     &__title {
         margin-bottom: 60px;
     }
@@ -63,8 +63,8 @@
     &__checkbox {
         display: none;
 
-        &:checked+.form-top__agree__ok {
-            background: url('../img/last-form/ok.png') no-repeat center;
+        &:checked+.reviews__agree__ok {
+            background: url('../img/ok.png') no-repeat center;
         }
     }
 
@@ -160,6 +160,7 @@
         width: 560px;
         height: 336px;
         margin-right: 0!important;
+        margin-bottom: 40px;
     }
 
     &-slider__item {
@@ -170,8 +171,6 @@
         align-items: center;
     }
     &-slider-item {
-        position: relative;
-        z-index: 10;
         padding: 25px 23px 53px 23px;
         width: 520px;
         height: 326px;
@@ -184,16 +183,22 @@
         position: absolute;
         left: 0;
         bottom: 10px;
-        z-index: 100!important;
+        cursor: pointer;
+        z-index: 999;
     }
     &-button-next {
         position: absolute;
         left: 0;
         top: 10px;
+        cursor: pointer;
+        z-index: 999;
     }
     &-slider__wrapper {
         display: flex;
         column-gap: 20px;
+    }
+    &-slider__avatar {
+        height: 100px;
     }
     &-slider__name {
         color: #242F40;
@@ -213,7 +218,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     &-slider__link {
         color: #AA0B0D;
@@ -225,5 +230,39 @@
         opacity: .3;
         bottom: -208px;
         right: 0;
+    }
+    &__bg-two {
+        position: absolute;
+        right: 0;
+        opacity: .3;
+        bottom: -803px;
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+        column-gap: 7px;
+    }
+    .wrap {
+        position: relative;
+    }
+    .swiper-pagination {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 20px;
+        height: 45px;
+        transform: translateY(-50%);
+        background-color: transparent;
+        color: transparent;
+    }
+    .swiper-pagination-current {
+        color: #1D1E23;
+        font-family: 'Gilroy Black', sans-serif;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 900;
+    }
+    .swiper-pagination-total {
+        display: none;
     }
 }

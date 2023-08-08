@@ -1,8 +1,7 @@
 .without-risks {
-    background: rgba(238, 238, 238, 0.60);
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
     padding-bottom: 140px;
+    position: relative;
+    background: rgba(238, 238, 238, 0.60);
     &__title {
         margin-bottom: 60px;
     }
@@ -36,6 +35,12 @@
         font-size: 20px;
         font-weight: 900;
         cursor: pointer;
+        transition: all .3s;
+        &:hover {
+            border: 3px solid transparent;
+            background-color: #FFC700;
+            color: #fff;
+        }
     }
     &__item-title {
         color: #AA0B0D;

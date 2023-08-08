@@ -1,9 +1,7 @@
 .form-top {
     position: relative;
-    // background: rgba(238, 238, 238, 0.60);
-    // backdrop-filter: blur(5.5px);
-    // -webkit-backdrop-filter: blur(5.5px);
     padding-bottom: 140px;
+    background: rgba(238, 238, 238, 0.60);
     z-index: 2;
     &__image-bg {
         position: absolute;
@@ -55,6 +53,12 @@
         font-weight: 900;
         font-size: 20px;
         margin-bottom: 5px;
+        transition: all .3s;
+        &:hover {
+            border: 3px solid transparent;
+            background-color: #AA0B0D;
+            color: #fff;
+        }
     }
 
     &__block-inputs {
@@ -92,7 +96,7 @@
         display: none;
 
         &:checked+.form-top__agree__ok {
-            background: url('../img/last-form/ok.png') no-repeat center;
+            background: url('../img/ok.png') no-repeat center;
         }
     }
 

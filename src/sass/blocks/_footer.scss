@@ -62,5 +62,15 @@
         background: linear-gradient(-270deg, #FF0000 -28.43%, #F1C622 96.89%) border-box;
         box-shadow: inset 0px 0px 0px 100vw #fff;
         padding: 17px 71px;
+        transition: all .3s;
+        &:hover {
+            border: 3px solid transparent;
+            background-color: #F1C622;
+            box-shadow: none;
+            color: #fff;
+        }
+    }
+    &__nav-mobile {
+        display: none;
     }
 }

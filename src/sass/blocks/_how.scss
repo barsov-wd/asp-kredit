@@ -1,21 +1,28 @@
 .how {
-    background: rgba(238, 238, 238, 0.60);
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
     padding-bottom: 292px;
+    position: relative;
+    background: rgba(238, 238, 238, 0.60);
+    &-slider {
+        padding: 0 5px;
+    }
     &__title-color {
-        margin-bottom: 130px;
+        margin-bottom: 50px;
     }
     &__items {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 45px;
+        padding-top: 70px;
+    }
+    &-button-prev,
+    &-button-next {
+        display: none;
     }
     &__item {
         padding-top: 117px;
         position: relative;
-        width: 385px;
+        width: 100%;
         min-height: 271px;
         border-radius: 35px;
         background: #FFF;

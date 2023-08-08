@@ -20,42 +20,42 @@
                 <nav class="header__nav">
                     <ul class="header__menu">
                         <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">
+                            <a href="#promo" class="header__menu-link">
                                 Займы под залог
                             </a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">
+                            <a href="#calc" class="header__menu-link">
                                 Калькулятор
                             </a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">
+                            <a href="#about" class="header__menu-link">
                                 О компании
                             </a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">
+                            <a href="#without-risks" class="header__menu-link">
                                 Гарантии
                             </a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">
+                            <a href="#how" class="header__menu-link">
                                 Получить займ
                             </a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">
+                            <a href="#receving" class="header__menu-link">
                                 Документы
                             </a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">
+                            <a href="#specialists" class="header__menu-link">
                                 Консультация
                             </a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">
+                            <a href="#contacts" class="header__menu-link">
                                 Контакты
                             </a>
                         </li>
@@ -84,7 +84,7 @@
     <!-- ./header -->
 
     <main class="main">
-        <section class="promo">
+        <section id="promo" class="promo">
             <img src="./img/promo/promo-image.png" alt="promo-image" class="promo__image">
             <img src="./img/promo/image-money.png" alt="image-money" class="promo__image-money">
             <div class="container">
@@ -104,7 +104,7 @@
                         Мы гарантируем, что вы <br>
                         сохраните право собственности
                     </div>
-                    <button class="promo__button">Оставить заявку</button>
+                    <button data-modal class="button-effect promo__button">Оставить заявку</button>
                     <img src="./img/promo/image-middle.png" alt="image-middle" class="promo__image-middle">
                 </div>
                 <div class="promo__items">
@@ -262,7 +262,7 @@
         </section>
         <!-- ./items-mobile -->
 
-        <section class="calc">
+        <section id="calc" class="calc">
             <!-- <img src="./img/calc/calc-image.png" alt="calc-image" class="calc__image"> -->
             <div class="container">
                 <h2 class="title calc__title">Рассчитайте ежемесячный платеж и</h2>
@@ -366,77 +366,86 @@
                 <h2 class="title get__title">
                     Получи кредит под залог :
                 </h2>
-                <div class="get__items">
-                    <div class="get__item">
-                        <div class="get__item-circle">
-                            <img src="./img/get/image-1.png" alt="image-1" class="get__item-image">
+                <div class="swiper get-slider">
+                    <div class="swiper-wrapper get__items">
+                        <div class="swiper-slide get__item">
+                            <div class="get__item-circle">
+                                <img src="./img/get/image-1.png" alt="image-1" class="get__item-image">
+                            </div>
+                            <div class="get__item-text">
+                                Квартиры
+                            </div>
                         </div>
-                        <div class="get__item-text">
-                            Квартиры
+                        <div class="swiper-slide get__item">
+                            <div class="get__item-circle">
+                                <img src="./img/get/image-2.png" alt="image-1" class="get__item-image">
+                            </div>
+                            <div class="get__item-text">
+                                Комнаты
+                            </div>
+                        </div>
+                        <div class="swiper-slide get__item">
+                            <div class="get__item-circle">
+                                <img src="./img/get/image-3.png" alt="image-1" class="get__item-image">
+                            </div>
+                            <div class="get__item-text">
+                                Дома
+                            </div>
+                        </div>
+                        <div class="swiper-slide get__item">
+                            <div class="get__item-circle">
+                                <img src="./img/get/image-4.png" alt="image-1" class="get__item-image">
+                            </div>
+                            <div class="get__item-text">
+                                Апартаменты
+                            </div>
+                        </div>
+                        <div class="swiper-slide get__item">
+                            <div class="get__item-circle">
+                                <img src="./img/get/image-5.png" alt="image-1" class="get__item-image">
+                            </div>
+                            <div class="get__item-text">
+                                Автомобиль
+                            </div>
+                        </div>
+                        <div class="swiper-slide get__item">
+                            <div class="get__item-circle">
+                                <img src="./img/get/image-6.png" alt="image-1" class="get__item-image">
+                            </div>
+                            <div class="get__item-text">
+                                Коммерческая недвижимость
+                            </div>
+                        </div>
+                        <div class="swiper-slide get__item">
+                            <div class="get__item-circle">
+                                <img src="./img/get/image-7.png" alt="image-1" class="get__item-image">
+                            </div>
+                            <div class="get__item-text">
+                                Таунхаусы
+                            </div>
+                        </div>
+                        <div class="swiper-slide get__item">
+                            <div class="get__item-circle">
+                                <img src="./img/get/image-8.png" alt="image-1" class="get__item-image">
+                            </div>
+                            <div class="get__item-text">
+                                Офисные помещения
+                            </div>
                         </div>
                     </div>
-                    <div class="get__item">
-                        <div class="get__item-circle">
-                            <img src="./img/get/image-2.png" alt="image-1" class="get__item-image">
-                        </div>
-                        <div class="get__item-text">
-                            Комнаты
-                        </div>
-                    </div>
-                    <div class="get__item">
-                        <div class="get__item-circle">
-                            <img src="./img/get/image-3.png" alt="image-1" class="get__item-image">
-                        </div>
-                        <div class="get__item-text">
-                            Дома
-                        </div>
-                    </div>
-                    <div class="get__item">
-                        <div class="get__item-circle">
-                            <img src="./img/get/image-4.png" alt="image-1" class="get__item-image">
-                        </div>
-                        <div class="get__item-text">
-                            Апартаменты
-                        </div>
-                    </div>
-                    <div class="get__item">
-                        <div class="get__item-circle">
-                            <img src="./img/get/image-5.png" alt="image-1" class="get__item-image">
-                        </div>
-                        <div class="get__item-text">
-                            Автомобиль
-                        </div>
-                    </div>
-                    <div class="get__item">
-                        <div class="get__item-circle">
-                            <img src="./img/get/image-6.png" alt="image-1" class="get__item-image">
-                        </div>
-                        <div class="get__item-text">
-                            Коммерческая недвижимость
-                        </div>
-                    </div>
-                    <div class="get__item">
-                        <div class="get__item-circle">
-                            <img src="./img/get/image-7.png" alt="image-1" class="get__item-image">
-                        </div>
-                        <div class="get__item-text">
-                            Таунхаусы
-                        </div>
-                    </div>
-                    <div class="get__item">
-                        <div class="get__item-circle">
-                            <img src="./img/get/image-8.png" alt="image-1" class="get__item-image">
-                        </div>
-                        <div class="get__item-text">
-                            Офисные помещения
-                        </div>
-                    </div>
+                    
                 </div>
+                <!-- If we need navigation buttons -->
+                
+                <img class="get-button-prev" src="./img/get/arrow-prev.png" alt="arrow-prev">
+                
+                <img class="get-button-next" src="./img/get/arrow-next.png" alt="arrow-next">
             </div>
-        </section> -->
+            
+        </section> 
         <!-- ./get -->
 
-        <!-- <section class="about">
+        <section id="about" class="about">
             <div class="container">
                 <div class="about__inner">
                     <div class="about__content">
@@ -458,102 +467,109 @@
         </section> 
         <!-- ./about -->
 
-        <section class="without-risks">
+        <section id="without-risks" class="without-risks">
             <div class="container">
                 <div class="title-color without-risks__title-color">Никаких рисков</div>
                 <h2 class="title without-risks__title">
                     при оформлении кредита
                 </h2>
-                <div class="without-risks__items">
-                    <div class="without-risks__item">
-                        <div class="without-risks__item-title">
-                            Без переоформления собственности
+                <div class="without-risks__items-container">
+                    <div class="without-risks__items">
+                        <div class="without-risks__item">
+                            <div class="without-risks__item-title">
+                                Без переоформления собственности
+                            </div>
+                            <p class="without-risks__item-descr">
+                                Недвижимость находится под защитой Гражданского Кодекса РФ по договору залога недвижимого имущества...
+                            </p>
+                            <a href="#" class="without-risks__item-link">
+                                Читать подробнее
+                            </a>
                         </div>
-                        <p class="without-risks__item-descr">
-                            Недвижимость находится под защитой Гражданского Кодекса РФ по договору залога недвижимого имущества...
-                        </p>
-                        <a href="#" class="without-risks__item-link">
-                            Читать подробнее
-                        </a>
-                    </div>
-                    <div class="without-risks__item">
-                        <div class="without-risks__item-title">
-                            Обязательная регистрация в Росреестре
+                        <div class="without-risks__item">
+                            <div class="without-risks__item-title">
+                                Обязательная регистрация в Росреестре
+                            </div>
+                            <p class="without-risks__item-descr">
+                                Регистрация договора займа с залогом недвижимости - основное условие легальности сделки...
+                            </p>
+                            <a href="#" class="without-risks__item-link">
+                                Читать подробнее
+                            </a>
                         </div>
-                        <p class="without-risks__item-descr">
-                            Регистрация договора займа с залогом недвижимости - основное условие легальности сделки...
-                        </p>
-                        <a href="#" class="without-risks__item-link">
-                            Читать подробнее
-                        </a>
-                    </div>
-                    <div class="without-risks__item">
-                        <div class="without-risks__item-title">
-                            Возможность досрочного погашения
+                        <div class="without-risks__item">
+                            <div class="without-risks__item-title">
+                                Возможность досрочного погашения
+                            </div>
+                            <p class="without-risks__item-descr">
+                                Вы можете погасить займ досрочно без штрафов и лишних процентов на любом этапе выплат...
+                            </p>
+                            <a href="#" class="without-risks__item-link">
+                                Читать подробнее
+                            </a>
                         </div>
-                        <p class="without-risks__item-descr">
-                            Вы можете погасить займ досрочно без штрафов и лишних процентов на любом этапе выплат...
-                        </p>
-                        <a href="#" class="without-risks__item-link">
-                            Читать подробнее
-                        </a>
-                    </div>
-                    <div class="without-risks__item">
-                        <div class="without-risks__item-title">
-                            Деньги в день обращения
+                        <div class="without-risks__item">
+                            <div class="without-risks__item-title">
+                                Деньги в день обращения
+                            </div>
+                            <p class="without-risks__item-descr">
+                                Оставьте заявку на сайте, выберите день встречи и уже в день заключения договора получите полную запрошенную
+                                вами
+                                сумму...
+                            </p>
+                            <a href="#" class="without-risks__item-link">
+                                Читать подробнее
+                            </a>
                         </div>
-                        <p class="without-risks__item-descr">
-                            Оставьте заявку на сайте, выберите день встречи и уже в день заключения договора получите полную запрошенную вами
-                            сумму...
-                        </p>
-                        <a href="#" class="without-risks__item-link">
-                            Читать подробнее
-                        </a>
-                    </div>
-                    <div class="without-risks__item">
-                        <div class="without-risks__item-title">
-                            Удаленная регистрация с ЭЦП
+                        <div class="without-risks__item">
+                            <div class="without-risks__item-title">
+                                Удаленная регистрация с ЭЦП
+                            </div>
+                            <p class="without-risks__item-descr">
+                                Оформите займ быстро, используя электронную цифровую подпись. Мы предоставим помощь в получении ЭЦП
+                                бесплатно...
+                            </p>
+                            <a href="#" class="without-risks__item-link">
+                                Читать подробнее
+                            </a>
                         </div>
-                        <p class="without-risks__item-descr">
-                            Оформите займ быстро, используя электронную цифровую подпись. Мы предоставим помощь в получении ЭЦП бесплатно...
-                        </p>
-                        <a href="#" class="without-risks__item-link">
-                            Читать подробнее
-                        </a>
-                    </div>
-                    <div class="without-risks__item">
-                        <div class="without-risks__item-title">
-                            Объединяем все кредиты в один
+                        <div class="without-risks__item">
+                            <div class="without-risks__item-title">
+                                Объединяем все кредиты в один
+                            </div>
+                            <p class="without-risks__item-descr">
+                                Вы можете бесплатно продлить договор на 12-18 месяцев при необходимости без причинения ущерба кредитной
+                                истории...
+                            </p>
+                            <a href="#" class="without-risks__item-link">
+                                Читать подробнее
+                            </a>
                         </div>
-                        <p class="without-risks__item-descr">
-                            Вы можете бесплатно продлить договор на 12-18 месяцев при необходимости без причинения ущерба кредитной истории...
-                        </p>
-                        <a href="#" class="without-risks__item-link">
-                            Читать подробнее
-                        </a>
-                    </div>
-                    <div class="without-risks__item">
-                        <div class="without-risks__item-title">
-                            А если имущество в залоге?
+                        <div class="without-risks__item">
+                            <div class="without-risks__item-title">
+                                А если имущество в залоге?
+                            </div>
+                            <p class="without-risks__item-descr">
+                                Заключается новый кредитный договор на более выгодных для вас условиях, так же вы можете получить
+                                дополнительную
+                                сумму...
+                            </p>
+                            <a href="#" class="without-risks__item-link">
+                                Читать подробнее
+                            </a>
                         </div>
-                        <p class="without-risks__item-descr">
-                            Заключается новый кредитный договор на более выгодных для вас условиях, так же вы можете получить дополнительную
-                            сумму...
-                        </p>
-                        <a href="#" class="without-risks__item-link">
-                            Читать подробнее
-                        </a>
-                    </div>
-                    <div class="without-risks__item">
-                        <div class="without-risks__item-title">
-                            Получение кредита под залог доли
+                        <div class="without-risks__item">
+                            <div class="without-risks__item-title">
+                                Получение кредита под залог доли
+                            </div>
+                            <p class="without-risks__item-descr">
+                                Оформите займ быстро, используя электронную цифровую подпись. Мы предоставим помощь в получении ЭЦП
+                                бесплатно...
+                            </p>
+                            <a href="#" class="without-risks__item-link">
+                                Читать подробнее
+                            </a>
                         </div>
-                        <p class="without-risks__item-descr">
-                            Оформите займ быстро, используя электронную цифровую подпись. Мы предоставим помощь в получении ЭЦП бесплатно...
-                        </p>
-                        <a href="#" class="without-risks__item-link">
-                            Читать подробнее
-                        </a>
                     </div>
                 </div>
                 <button class="without-risks__button">
@@ -563,63 +579,80 @@
         </section> 
         <!-- ./without-risks -->
 
-        <section class="how">
+        <section id="how" class="how">
             <div class="container">
                 <h2 class="title how__title">
                     Получите кредит уже сегодня
                 </h2>
                 <div class="title-color how__title-color">Как?</div>
-                <div class="how__items">
-                    <div class="how__item">
-                        <div class="how__item-number">
-                            01
+                <!-- Slider main container -->
+                <div class="swiper how-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper how__items">
+                        <!-- Slides -->
+                        <div class="swiper-slide how__item">
+                            <div class="how__item-number">
+                                01
+                            </div>
+                            <div class="how__item-title">
+                                Заявка
+                            </div>
+                            <p class="how__item-text">
+                                Оставьте заявку онлайн <br> или звоните:
+                            </p>
+                            <a href="tel:+79678731251" class="how__item-phone-link">8 (967) 873-12-51</a>
                         </div>
-                        <div class="how__item-title">
-                            Заявка
+
+                        <div class="swiper-slide how__item">
+                            <div class="how__item-number">02</div>
+                            <div class="how__item-title">
+                                Согласование
+                            </div>
+                            <p class="how__item-text">
+                                Специалисты свяжутся с вами <br> и озвучат предварительное <br> решение в течении 15 минут
+                            </p>
                         </div>
-                        <p class="how__item-text">
-                            Оставьте заявку онлайн <br> или звоните:
-                        </p>
-                        <a href="tel:+79678731251" class="how__item-phone-link">8 (967) 873-12-51</a>
+
+                        <div class="swiper-slide how__item">
+                            <div class="how__item-number">03</div>
+                            <div class="how__item-title">
+                                Заключаем договор
+                            </div>
+                            <p class="how__item-text">
+                                Составляем договор, <br> назначаем дату и <br> регистрируем сделку
+                            </p>
+                        </div>
+
+                        <div class="swiper-slide how__item">
+                            <div class="how__item-number">04</div>
+                            <div class="how__item-title">
+                                Выдача денег
+                            </div>
+                            <p class="how__item-text">
+                                В день заключения договора <br> выдаем вам сумму наличными <br> или переводим на карту
+                            </p>
+                        </div>
                     </div>
-                    <div class="how__item">
-                        <div class="how__item-number">02</div>
-                        <div class="how__item-title">
-                            Согласование
-                        </div>
-                        <p class="how__item-text">
-                            Специалисты свяжутся с вами <br> и озвучат предварительное <br> решение в течении 15 минут
-                        </p>
-                    </div>
-                    <div class="how__item">
-                        <div class="how__item-number">03</div>
-                        <div class="how__item-title">
-                            Заключаем договор
-                        </div>
-                        <p class="how__item-text">
-                            Составляем договор, <br> назначаем дату и <br> регистрируем сделку
-                        </p>
-                    </div>
-                    <div class="how__item">
-                        <div class="how__item-number">04</div>
-                        <div class="how__item-title">
-                            Выдача денег
-                        </div>
-                        <p class="how__item-text">
-                            В день заключения договора <br> выдаем вам сумму наличными <br> или переводим на карту
-                        </p>
-                    </div>
+
+                    <button data-modal class="button how__button">
+                        Оставить заявку
+                    </button>
+                
+                    <!-- If we need navigation buttons -->
+                    <img class="how-button-prev" src="./img/how/arrow-prev.png" alt="arrow-prev">
+                    
+                    <img class="how-button-next" src="./img/how/arrow-next.png" alt="arrow-next">
+                
                 </div>
-                <button class="button how__button">
-                    Оставить заявку
-                </button>
             </div>
-        </section> 
+        </section>  
         <!-- .how -->
 
-        <section class="receving">
+
+        <section id="receving" class="receving">
             <img src="./img/receving/receving-bg.png" alt="receving-bg" class="receving__image-bg">
             <div class="container">
+                <img src="./img/receving/image-mobile.png" alt="image" class="receving__image">
                 <div class="receving__block">
                     <img class="receving__block-image" src="./img/receving/receving-image.png" alt="image">
                     <h2 class="title receving__title">Для получения кредита</h2>
@@ -640,7 +673,7 @@
         </section> 
         <!-- ./receving -->
 
-        <section class="specialists">
+        <section id="specialists" class="specialists">
             <div class="container">
                 <div class="title-color specialists__title-color">Специалисты нашей компании</div>
                 <h2 class="title specialists__title">
@@ -667,7 +700,7 @@
                             <li class="specialists__list-item">Ответим на все вопросы</li>
                             <li class="specialists__list-item">Озвучим предварительное решение</li>
                         </ul>
-                        <button class="specialists__button">Получить консультацию</button>
+                        <button data-modal class="specialists__button button-effect">Получить консультацию</button>
                         <div class="specialists__content-text">
                             Или позвоните нам:
                         </div>
@@ -683,6 +716,7 @@
 
         <section class="reviews">
             <img src="./img/reviews/reviews-bg.png" alt="reviews-bg" class="reviews__bg">
+            <img src="./img/contacts/contacts-bg.png" alt="contactss-bg" class="reviews__bg-two">
             <div class="container">
                 <div class="title-color reviews__title-color">
                     Отзывы наших клиентов,
@@ -715,13 +749,13 @@
                                 <div class="reviews__rating-block-label">Качество консультации</div>
                                 <div class="reviews__rating">
                                     <div class="reviews__rating-block-items">
-                                        <input id="reviews__rating-5" type="radio" class="reviews__rating-block-item" name="reviews-rating"
+                                        <input id="reviews__rating-5" type="radio" checked class="reviews__rating-block-item" name="reviews-rating"
                                             value="5">
                                         <label for="reviews__rating-5" class="reviews__rating-label"></label>
                                         <input id="reviews__rating-4" type="radio" class="reviews__rating-block-item" name="reviews-rating"
                                             value="4">
                                         <label for="reviews__rating-4" class="reviews__rating-label"></label>
-                                        <input id="reviews__rating-3" type="radio" class="reviews__rating-block-item" name="reviews-rating"
+                                        <input id="reviews__rating-3" type="radio"  class="reviews__rating-block-item" name="reviews-rating"
                                             value="3">
                                         <label for="reviews__rating-3" class="reviews__rating-label"></label>
                                         <input id="reviews__rating-2" type="radio" class="reviews__rating-block-item" name="reviews-rating"
@@ -739,7 +773,7 @@
                                     <div class="reviews__rating-block-items">
                                         <input id="reviews__rating-10" type="radio" class="reviews__rating-block-item" name="reviews-rating-2" value="5">
                                         <label for="reviews__rating-10" class="reviews__rating-label"></label>
-                                        <input id="reviews__rating-9" type="radio" class="reviews__rating-block-item" name="reviews-rating-2"
+                                        <input id="reviews__rating-9" type="radio" checked class="reviews__rating-block-item" name="reviews-rating-2"
                                             value="4">
                                         <label for="reviews__rating-9" class="reviews__rating-label"></label>
                                         <input id="reviews__rating-8" type="radio" class="reviews__rating-block-item" name="reviews-rating-2"
@@ -764,7 +798,7 @@
                                         <input id="reviews__rating-14" type="radio" class="reviews__rating-block-item" name="reviews-rating-3"
                                             value="4">
                                         <label for="reviews__rating-14" class="reviews__rating-label"></label>
-                                        <input id="reviews__rating-13" type="radio" class="reviews__rating-block-item" name="reviews-rating-3"
+                                        <input id="reviews__rating-13" type="radio" checked class="reviews__rating-block-item" name="reviews-rating-3"
                                             value="3">
                                         <label for="reviews__rating-13" class="reviews__rating-label"></label>
                                         <input id="reviews__rating-12" type="radio" class="reviews__rating-block-item" name="reviews-rating-3"
@@ -778,52 +812,156 @@
                             </div>
                         </div>
                     </form>
-                    <div class="swiper reviews-slider">
-                        <div class="swiper-wrapper reviews-slider__items">
-                            <div class="swiper-slide reviews-slider__item">
-                                <div class="reviews-slider-item">
-                                    <div class="reviews-slider__wrapper">
-                                        <img src="./img/reviews/avatar.png" alt="avatar" class="reviews-slider__avatar">
-                                        <div class="reviews-slider__user">
-                                            <div class="reviews-slider__name">София К.</div>
-                                            <div class="reviews-slider__date">
-                                                10.01.2023
+                    
+                    <div class="wrap">
+                        <div class="swiper reviews-slider">
+                            <div class="swiper-wrapper reviews-slider__items">
+                                <div class="swiper-slide reviews-slider__item">
+                                    <div class="reviews-slider-item">
+                                        <div class="reviews-slider__wrapper">
+                                            <img src="./img/reviews/avatar.png" alt="avatar" class="reviews-slider__avatar">
+                                            <div class="reviews-slider__user">
+                                                <div class="reviews-slider__name">София К.</div>
+                                                <div class="reviews-slider__date">
+                                                    10.01.2023
+                                                </div>
                                             </div>
                                         </div>
+                                        <p class="reviews-slider__descr">
+                                            Спасибо! Другие организации отказывали из-за отсутствия кредитной истории, а у вас и процент
+                                            хороший, и одобрили очень
+                                            быстро. Специалисты отличные!
+                                        </p>
+                                        <a href="#" class="reviews-slider__link">Читать подробнее</a>
                                     </div>
-                                    <p class="reviews-slider__descr">
-                                        Спасибо! Другие организации отказывали из-за отсутствия кредитной истории, а у вас и процент хороший, и одобрили очень
-                                        быстро. Специалисты отличные!
-                                    </p>
-                                    <a href="#" class="reviews-slider__link">Читать подробнее</a>
                                 </div>
-                            </div>
-                            <div class="swiper-slide reviews-slider__item">
-                                <div class="reviews-slider-item">
-                                    2
+                                <div class="swiper-slide reviews-slider__item">
+                                    <div class="reviews-slider-item">
+                                        <div class="reviews-slider__wrapper">
+                                            <img src="./img/reviews/avatar.png" alt="avatar" class="reviews-slider__avatar">
+                                            <div class="reviews-slider__user">
+                                                <div class="reviews-slider__name">Игорь Р.</div>
+                                                <div class="reviews-slider__date">
+                                                    10.01.2023
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews-slider__descr">
+                                            Официальной зп мне не хватало, а крупные банки отказывали в выдаче кредита. Спасибо вам, что помогли
+                                            и выдали кредит.
+                                            Уже выплатил, если что, обращусь еще
+                                        </p>
+                                        <a href="#" class="reviews-slider__link">Читать подробнее</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide reviews-slider__item">
-                                <div class="reviews-slider-item">
-                                    3
+                                <div class="swiper-slide reviews-slider__item">
+                                    <div class="reviews-slider-item">
+                                        <div class="reviews-slider__wrapper">
+                                            <img src="./img/reviews/avatar.png" alt="avatar" class="reviews-slider__avatar">
+                                            <div class="reviews-slider__user">
+                                                <div class="reviews-slider__name">Инна К.</div>
+                                                <div class="reviews-slider__date">
+                                                    10.01.2023
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews-slider__descr">
+                                            Сначала переживала, думала, что слишком рискованно. Сложилась у меня сложная ситуация, и нужны были
+                                            деньги сразу и
+                                            быстро. Решила оформить кредит под залог доли в квартире. Оформляла по паспорту, выдали деньги прям
+                                            в день сделки!
+                                            Выручили!
+                                        </p>
+                                        <a href="#" class="reviews-slider__link">Читать подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide reviews-slider__item">
+                                    <div class="reviews-slider-item">
+                                        <div class="reviews-slider__wrapper">
+                                            <img src="./img/reviews/avatar.png" alt="avatar" class="reviews-slider__avatar">
+                                            <div class="reviews-slider__user">
+                                                <div class="reviews-slider__name">Николай Ф.</div>
+                                                <div class="reviews-slider__date">
+                                                    10.01.2023
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews-slider__descr">
+                                            Появилась возможность вывести бизнес, поэтому решился на оформление кредита в этой компании. Не
+                                            прогорело! Спасибо!
+                                            Выплатил даже быстрее, чем рассчитывал. Ребята молодцы, сразу решение даже сказали
+                                        </p>
+                                        <a href="#" class="reviews-slider__link">Читать подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide reviews-slider__item">
+                                    <div class="reviews-slider-item">
+                                        <div class="reviews-slider__wrapper">
+                                            <img src="./img/reviews/avatar.png" alt="avatar" class="reviews-slider__avatar">
+                                            <div class="reviews-slider__user">
+                                                <div class="reviews-slider__name">Дамир Г.</div>
+                                                <div class="reviews-slider__date">
+                                                    10.01.2023
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews-slider__descr">
+                                            Отличный способ получить деньги в долг да еще и под такой процент! Сначала какое-то время
+                                            сомневался, даже поизучал
+                                            другие предложения, но тут получилось очень выгодно. Решил обратиться сюда. Все быстро.
+                                        </p>
+                                        <a href="#" class="reviews-slider__link">Читать подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide reviews-slider__item">
+                                    <div class="reviews-slider-item">
+                                        <div class="reviews-slider__wrapper">
+                                            <img src="./img/reviews/avatar.png" alt="avatar" class="reviews-slider__avatar">
+                                            <div class="reviews-slider__user">
+                                                <div class="reviews-slider__name">Мария Д.</div>
+                                                <div class="reviews-slider__date">
+                                                    10.01.2023
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews-slider__descr">
+                                            Хотела взять кредит без подтверждения дохода, у меня был только паспорт с собой. Приняли! Даже не
+                                            стали запрашивать
+                                            кредитную историю. Ребята работают - настоящие профессионалы, спасибо!
+                                        </p>
+                                        <a href="#" class="reviews-slider__link">Читать подробнее</a>
+                                    </div>
                                 </div>
                             </div>
 
+                            <div class="swiper-pagination"></div>
+
+                            <img class="reviews-button-next" src="./img/reviews/arrow-next.png" alt="arrow-next">
+                            <img class="reviews-button-prev" src="./img/reviews/arrow-prev.png" alt="arrow-prev">
                             
                         </div>
-                        <img class="reviews-button-prev" src="./img/reviews/arrow-prev.png" alt="arrow-prev">
-                        
-                        <img class="reviews-button-next" src="./img/reviews/arrow-next.png" alt="arrow-next">
+
+
+                        <div class="reviews__links">
+                            <a href="#" class="reviews__links-link">
+                                <img src="./img/reviews/link-1.png" alt="link-1">
+                            </a>
+                            <a href="#" class="reviews__links-link">
+                                <img src="./img/reviews/link-2.png" alt="link-2">
+                            </a>
+                            <a href="#" class="reviews__links-link">
+                                <img src="./img/reviews/link-3.png" alt="link-3">
+                            </a>
+                        </div>
                     </div>
                     
 
                 </div>
             </div>
-        </section>
+        </section> 
         <!-- ./reviews -->
 
-        <section class="contacts">
-            <img src="./img/contacts/contacts-bg.png" alt="contactss-bg" class="contacts__bg">
+        <section id="contacts" class="contacts">
             <div class="container">
                 <div class="contacts__inner">
                     <div class="contacts__content">
@@ -868,6 +1006,17 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="contacts__links">
+                            <a href="#" class="contacts__link">
+                                <img src="./img/contacts/icon-link-1.svg" alt="icon-1">
+                            </a>
+                            <a href="#" class="contacts__link">
+                                <img src="./img/contacts/icon-link-2.svg" alt="icon-2">
+                            </a>
+                            <a href="#" class="contacts__link">
+                                <img src="./img/contacts/icon-link-3.svg" alt="icon-3">
+                            </a>
+                        </div>
                     </div>
                     <div class="contacts__map">
                         <iframe
@@ -875,17 +1024,7 @@
                             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div class="contacts__links">
-                    <a href="#" class="contacts__link">
-                        <img src="./img/contacts/icon-link-1.svg" alt="icon-1">
-                    </a>
-                    <a href="#" class="contacts__link">
-                        <img src="./img/contacts/icon-link-2.svg" alt="icon-2">
-                    </a>
-                    <a href="#" class="contacts__link">
-                        <img src="./img/contacts/icon-link-3.svg" alt="icon-3">
-                    </a>
-                </div>
+              
             </div>
         </section>
         <!-- ./contacts -->
@@ -898,43 +1037,82 @@
                 <nav class="footer__nav">
                     <ul class="footer__menu">
                         <li class="footer__menu-item">
-                            <a href="#" class="footer__menu-link">Займы под залог</a>
+                            <a href="#promo" class="footer__menu-link">Займы под залог</a>
                         </li>
                         <li class="footer__menu-item">
-                            <a href="#" class="footer__menu-link">Калькулятор</a>
+                            <a href="#calc" class="footer__menu-link">Калькулятор</a>
                         </li>
                         <li class="footer__menu-item">
-                            <a href="#" class="footer__menu-link">О компании</a>
+                            <a href="#about" class="footer__menu-link">О компании</a>
                         </li>
                         <li class="footer__menu-item">
-                            <a href="#" class="footer__menu-link">Гарантии</a>
+                            <a href="#without-risks" class="footer__menu-link">Гарантии</a>
                         </li>
                         <li class="footer__menu-item">
-                            <a href="#" class="footer__menu-link">Получить займ</a>
+                            <a href="#how" class="footer__menu-link">Получить займ</a>
                         </li>
                         <li class="footer__menu-item">
-                            <a href="#" class="footer__menu-link">Документы</a>
+                            <a href="#receving" class="footer__menu-link">Документы</a>
                         </li>
                         <li class="footer__menu-item">
-                            <a href="#" class="footer__menu-link">Консультация</a>
+                            <a href="#specialists" class="footer__menu-link">Консультация</a>
                         </li>
                         <li class="footer__menu-item">
-                            <a href="#" class="footer__menu-link">Контакты</a>
+                            <a href="#contacts" class="footer__menu-link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
-                <a href="#" class="footer__menu-button">Бесплатная консультация</a>
+                <a href="#" data-modal class="footer__menu-button">Бесплатная консультация</a>
             </div>
-            <div class="footer__images">
-                <img src="./img/footer/image-1.png" alt="image-1" class="footer__image">
-                <img src="./img/footer/image-2.png" alt="image-2" class="footer__image">
-                <img src="./img/footer/image-3.png" alt="image-3" class="footer__image">
-                <img src="./img/footer/image-4.png" alt="image-4" class="footer__image">
-                <img src="./img/footer/image-5.png" alt="image-5" class="footer__image">
-                <img src="./img/footer/image-6.png" alt="image-6" class="footer__image">
-                <img src="./img/footer/image-7.png" alt="image-7" class="footer__image">
-                <img src="./img/footer/image-8.png" alt="image-8" class="footer__image">
+            <nav class="footer__nav-mobile">
+                <ul class="footer__menu">
+                    <li class="footer__menu-item">
+                        <a href="#promo" class="footer__menu-link">Займы под залог</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#calc" class="footer__menu-link">Калькулятор</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#about" class="footer__menu-link">О компании</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#without-risks" class="footer__menu-link">Гарантии</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#how" class="footer__menu-link">Получить займ</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#receving" class="footer__menu-link">Документы</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#specialists" class="footer__menu-link">Консультация</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#contacts" class="footer__menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="swiper footer-slider">
+                <div class="swiper-wrapper footer__images">
+                    <img src="./img/footer/image-1.png" alt="image-1" class="swiper-slide footer__image">
+                    <img src="./img/footer/image-2.png" alt="image-2" class="swiper-slide footer__image">
+                    <img src="./img/footer/image-3.png" alt="image-3" class="swiper-slide footer__image">
+                    <img src="./img/footer/image-4.png" alt="image-4" class="swiper-slide footer__image">
+                    <img src="./img/footer/image-5.png" alt="image-5" class="swiper-slide footer__image">
+                    <img src="./img/footer/image-6.png" alt="image-6" class="swiper-slide footer__image">
+                    <img src="./img/footer/image-7.png" alt="image-7" class="swiper-slide footer__image">
+                    <img src="./img/footer/image-8.png" alt="image-8" class="swiper-slide footer__image">
+                    <img src="./img/footer/image-1.png" alt="image-1" class="swiper-slide footer__image">
+                    <img src="./img/footer/image-2.png" alt="image-2" class="swiper-slide footer__image">
+                    <img src="./img/footer/image-3.png" alt="image-3" class="swiper-slide footer__image">
+                    <img src="./img/footer/image-4.png" alt="image-4" class="swiper-slide footer__image">
+                    <img src="./img/footer/image-5.png" alt="image-5" class="swiper-slide footer__image">
+                    <img src="./img/footer/image-6.png" alt="image-6" class="swiper-slide footer__image">
+                    <img src="./img/footer/image-7.png" alt="image-7" class="swiper-slide footer__image">
+                    <img src="./img/footer/image-8.png" alt="image-8" class="swiper-slide footer__image">
+                </div>
             </div>
+           
             <p class="footer__text">
                 Компания “ASP CREDIT” оказывает полную поддержку и быструю помощь в получении финансов. Специалисты всегда готовы
                 ответить на любые ваши вопросы и решить проблему.
@@ -950,14 +1128,14 @@
             <img data-menuClose class="menu__close" src="./img/modal/close.png">
             <div class="menu__box menu__box--1">
                 <nav class="menu__nav">
-                    <a data-menuClose href="#about" class="menu__link">Займы под залог</a>
-                    <a data-menuClose href="#result" class="menu__link">Калькулятор</a>
-                    <a data-menuClose href="#faq" class="menu__link">О компании</a>
-                    <a data-menuClose href="#for-whom" class="menu__link">Гарантии</a>
-                    <a data-menuClose href="#about" class="menu__link">Получить займ</a>
-                    <a data-menuClose href="#result" class="menu__link">Документы</a>
-                    <a data-menuClose href="#faq" class="menu__link">Консультация</a>
-                    <a data-menuClose href="#for-whom" class="menu__link">Контакты</a>
+                    <a data-menuClose href="#promo" class="menu__link">Займы под залог</a>
+                    <a data-menuClose href="#calc" class="menu__link">Калькулятор</a>
+                    <a data-menuClose href="#about" class="menu__link">О компании</a>
+                    <a data-menuClose href="#without-risks" class="menu__link">Гарантии</a>
+                    <a data-menuClose href="#how" class="menu__link">Получить займ</a>
+                    <a data-menuClose href="#receving" class="menu__link">Документы</a>
+                    <a data-menuClose href="#specialists" class="menu__link">Консультация</a>
+                    <a data-menuClose href="#contacts" class="menu__link">Контакты</a>
                 </nav>
                 <div class="menu__links">
                     <a href="#" class="menu__links-link">
@@ -998,6 +1176,14 @@
                     <input type="text" class="modal-main__input" placeholder="Какая у Вас недвижимость?">
                 </div>
                 <button class="button modal-main__button">Получить одобрение</button>
+                <label class="modal-main__agree">
+                    <span class="modal-main__agree__text">
+                        Нажимая на кнопку, вы даете согласие на обработку
+                        своих персональных данныхи соглашаетесь с Политикой конфиденциальности
+                    </span>
+                    <input checked type="checkbox" class="modal-main__checkbox">
+                    <span class="modal-main__agree__ok"></span>
+                </label>
             </form>
         </div>
     </div>
@@ -1018,6 +1204,10 @@
         </div>
     </div>
     <!-- ./modal-thanks -->
+
+    <a href="tel:+79678731251" class="phone-fix">
+        <img src="./img/phoneFix.svg" alt="phone">
+    </a>
 
     <script src="js/swiper-bundle-min.js"></script>
     <script src="js/script.js"></script>

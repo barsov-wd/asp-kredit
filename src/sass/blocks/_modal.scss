@@ -92,6 +92,42 @@
         margin-bottom: 10px;
     }
 
+    &-main__checkbox {
+        display: none;
+
+        &:checked+.modal-main__agree__ok {
+            background: url('../img/ok.png') no-repeat center;
+        }
+    }
+
+    &-main__agree {
+        display: block;
+        width: 100%;
+        max-width: 456px;
+        padding-left: 35px;
+        text-align: left;
+        position: relative;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+    &-main__agree__ok {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border: 1px solid #1D1E23;
+        position: absolute;
+        left: 0;
+        top: 5px;
+    }
+
+    &-main__agree__text {
+        font-size: 12px;
+        line-height: 105%;
+        color: #1D1E23;
+    }
+
     &-thanks__dialog {
         position: relative;
         max-width: 940px;

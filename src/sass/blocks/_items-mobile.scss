@@ -1,5 +1,7 @@
 .items-mobile {
+    position: relative;
     padding-bottom: 120px;
+    background: rgba(238, 238, 238, 0.60);
     display: none;
     &__items {
         width: 832px;

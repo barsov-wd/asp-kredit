@@ -22,10 +22,7 @@ body {
     box-sizing: border-box;
     max-width: 1920px;
     margin: 0 auto;
-    position: relative;
-    background: rgba(238, 238, 238, 0.60);
-    // backdrop-filter: blur(5.5px);
-    // -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(238, 238, 238, 0.90);
 }
 
 
@@ -61,6 +58,14 @@ h6 {
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s;
+}
+
+.phone-fix {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+    display: block;
 }
 
 .fade {

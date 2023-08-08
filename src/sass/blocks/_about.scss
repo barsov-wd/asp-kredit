@@ -1,9 +1,7 @@
 .about {
-    background: rgba(238, 238, 238, 0.60);
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
     padding-bottom: 140px;
     position: relative;
+    background: rgba(238, 238, 238, 0.60);
     z-index: 1;
     &__inner {
         display: flex;

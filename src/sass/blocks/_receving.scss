@@ -1,15 +1,13 @@
 .receving {
     position: relative;
-    background: rgba(238, 238, 238, 0.60);
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
     padding-bottom: 140px;
+    background: rgba(238, 238, 238, 0.60);
     z-index: 2;
     &__image-bg {
         position: absolute;
         opacity: .3;
         left: 0;
-        bottom: -300px;
+        bottom: -415px;
     }
     &__block {
         position: relative;
@@ -46,5 +44,8 @@
             border-radius: 100%;
             background: #1D1E23;  
         }
+    }
+    &__image {
+        display: none;
     }
 }
